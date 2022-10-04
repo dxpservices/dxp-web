@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="jah-khalib.mp3" autoplay></audio>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="bg.jpg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">DXP Services</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>DXP Services</h2>
+                <h4>Services for you.</h4>
+                <p>
+                    Так что без лишних подкатов,
+                    букетов, шоколада, гламурных подкладок.
+                    Я подойду к тебе, просто скажу тебе нагло "Привет,
+                    Если че я Баха."
+                </p>
+                <a href="#dxp" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="dxp" id="dxp">
+        <div class="text">
+            <h2 style="--i:0.5"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:1.5"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:2.5"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:2.25"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:1.25"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:0.75"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:3"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:0.35"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+            <h2 style="--i:0.25"><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span>
+                <span>DXP Services</span><span>DXP Services</span><span>DXP Services</span></h2>
+        </div>
+    </section>
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#dxp" onclick="toggleMenu();">DXP</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+        const position = document.documentElement;
+        position.addEventListener("mousemove", e => {
+            position.style.setProperty('--x', e.clientX + 'px');
+        });
+    </script>
+</body>
+</html>
